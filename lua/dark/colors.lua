@@ -23,7 +23,7 @@ for cname, hex in pairs(gray_colors) do
    colors[cname] = hex
 end
 
-local yellow_colors = utils.hexGen(colors.yellow, "yellow_gen", 4, 0.4)
+local yellow_colors = utils.hexGen(colors.yellow, "yellow_gen", 3, 0.4)
 for cname, hex in pairs(yellow_colors) do
    colors[cname] = hex
 end
@@ -33,7 +33,7 @@ for cname, hex in pairs(cyan_colors) do
    colors[cname] = hex
 end
 
-local green_colors = utils.hexGen(colors.darkgreen, "green_gen", 4, 0.4)
+local green_colors = utils.hexGen(colors.darkgreen, "green_gen", 6, 0.4)
 for cname, hex in pairs(green_colors) do
    colors[cname] = hex
 end
