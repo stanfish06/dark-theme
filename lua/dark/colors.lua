@@ -1,16 +1,9 @@
+local utils = require 'dark.utils'
+
 -- TODO: color gradients
 local colors = {
   bg         = '#1E1E1E',
   fg 	     = '#EBEBEB',
-  gray1      = "#2E2E2E",
-  gray2      = "#3E3E3E",
-  gray3      = "#4E4E4E",
-  gray4      = "#5E5E5E",
-  gray5      = "#6E6E6E",
-  gray6      = "#7E7E7E",
-  gray7      = "#8E8E8E",
-  gray8      = "#9E9E9E",
-  gray9      = "#DEDEDE",
   yellow     = '#FCE566',
   yellowgray = '#B1AC8C',
   darkgreen  = '#66BB6A',
@@ -24,5 +17,10 @@ local colors = {
   red        = '#EB6F92',
   coolgray   = '#F9FAFB',
 }
+
+local gray_colors = utils.grayGen(10)
+for cname, hex in pairs(gray_colors) do
+   colors[cname] = hex
+end
 
 return colors

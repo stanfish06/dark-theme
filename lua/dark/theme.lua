@@ -23,7 +23,7 @@ end
 local syntax_highlight = {
    Normal    = { fg = colors.fg    , bg = colors.bg   , bold = false, italic = false }, 
    Terminal  = { fg = colors.fg    , bg = colors.bg   , bold = false, italic = false },
-   Visual    = { fg = colors.bg    , bg = colors.gray8, bold = false, italic = false },
+   Visual    = { fg = colors.bg    , bg = colors.gray6, bold = false, italic = false },
    Comment   = { fg = colors.cyan  , bg = colors.bg   , bold = true , italic = true  },
    String    = { fg = colors.green , bg = colors.bg   , bold = false, italic = false },
    Function  = { fg = colors.yellow, bg = colors.bg   , bold = false, italic = false },
