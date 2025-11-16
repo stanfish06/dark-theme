@@ -21,15 +21,15 @@ function M.Hi(group, fg, bg, bold, italic)
 end
 
 local syntax_highlight = {
-   Normal       = { fg = colors.fg           , bg = colors.bg   , bold = false, italic = false }, 
-   Terminal     = { fg = colors.fg           , bg = colors.bg   , bold = false, italic = false },
-   Visual       = { fg = colors.bg           , bg = colors.gray6, bold = false, italic = false },
-   Comment      = { fg = colors.cyan_gen3    , bg = colors.bg   , bold = true , italic = true  },
-   String       = { fg = colors.green_gen3   , bg = colors.bg   , bold = false, italic = false },
-   Function     = { fg = colors.yellow_gen2  , bg = colors.bg   , bold = false, italic = false },
-   Type         = { fg = colors.blue_gen5    , bg = colors.bg   , bold = false, italic = false },
-   LineNr       = { fg = colors.gray7        , bg = colors.bg   , bold = false, italic = false },
-   CursorLineNr = { fg = colors.yellow_gen2  , bg = colors.bg   , bold = false, italic = false },
+   Normal       = { fg = colors.fg         , bg = colors.bg   , bold = false, italic = false }, 
+   Terminal     = { fg = colors.fg         , bg = colors.bg   , bold = false, italic = false },
+   Visual       = { fg = colors.bg         , bg = colors.gray6, bold = false, italic = false },
+   Comment      = { fg = colors.cyan_gen3  , bg = colors.bg   , bold = true , italic = true  },
+   String       = { fg = colors.green_gen5 , bg = colors.bg   , bold = false, italic = false },
+   Function     = { fg = colors.yellow_gen2, bg = colors.bg   , bold = false, italic = false },
+   Type         = { fg = colors.blue_gen5  , bg = colors.bg   , bold = false, italic = false },
+   LineNr       = { fg = colors.gray7      , bg = colors.bg   , bold = false, italic = false },
+   CursorLineNr = { fg = colors.yellow_gen2, bg = colors.bg   , bold = false, italic = false },
 }
 
 function M.setup()

@@ -3,7 +3,7 @@ local utils = require 'dark.utils'
 -- TODO: color gradients
 local colors = {
   bg         = '#1E1E1E',
-  fg 	     = '#EBEBEB',
+  fg         = '#EBEBEB',
   yellow     = '#FCE566',
   yellowgray = '#B1AC8C',
   darkgreen  = '#66BB6A',
