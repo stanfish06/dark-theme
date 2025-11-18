@@ -4,18 +4,22 @@ local utils = require 'dark.utils'
 local colors = {
   bg         = '#1E1E1E',
   fg         = '#EBEBEB',
-  yellow     = '#FCE566',
+  yellow     = '#FFF244',
   yellowgray = '#B1AC8C',
   darkgreen  = '#66BB6A',
-  green      = '#A5D6A7',
+  green      = '#66EB66',
   greengray  = '#A4B5A7',
   darkblue   = '#0000CC',
   cyan       = '#2AA198',
-  blue       = '#88C0D0',
+  cyandim    = '#00787A',
+  blue       = '#9CCFD8',
   bluegray   = '#b8c0e0',
+  purpleblue = '#889AFF',
   darkred    = '#B22222',
   red        = '#EB6F92',
   coolgray   = '#F9FAFB',
+  teal       = '#4DB5BD',
+  purple     = '#E1BEE9',
 }
 
 local gray_colors = utils.grayGen(10)
@@ -23,24 +27,8 @@ for cname, hex in pairs(gray_colors) do
    colors[cname] = hex
 end
 
-local yellow_colors = utils.hexGen(colors.yellow, "yellow_gen", 3, 0.4)
-for cname, hex in pairs(yellow_colors) do
+local pal_colors = utils.palGen(10, 12, 0.4)
+for cname, hex in pairs(pal_colors) do
    colors[cname] = hex
 end
-
-local cyan_colors = utils.hexGen(colors.cyan, "cyan_gen", 6, 0.4)
-for cname, hex in pairs(cyan_colors) do
-   colors[cname] = hex
-end
-
-local green_colors = utils.hexGen(colors.darkgreen, "green_gen", 6, 0.4)
-for cname, hex in pairs(green_colors) do
-   colors[cname] = hex
-end
-
-local blue_colors = utils.hexGen(colors.darkblue, "blue_gen", 6, 0.4)
-for cname, hex in pairs(blue_colors) do
-   colors[cname] = hex
-end
-
 return colors

@@ -60,15 +60,15 @@ end
 
 function hex2rgb(hex)
    local hex = hex:gsub("#", "")
-   
+
    local r255 = tonumber(hex:sub(1, 2), 16)
    local g255 = tonumber(hex:sub(3, 4), 16)
    local b255 = tonumber(hex:sub(5, 6), 16)
-   
+
    local r = r255 / 255
    local g = g255 / 255
    local b = b255 / 255
-   
+
    return r, g, b
 end
 
@@ -79,9 +79,25 @@ function M.grayGen(n)
    for i = 0, n - 1 do
       local l = i * incre_L
       local r, g, b = oklch2rgb(l, 0, 0)
-      gray_colors["gray" .. i] = rgb2hex(r, g, b)
+      gray_colors["gray" .. (i + 1)] = rgb2hex(r, g, b)
    end
    return gray_colors
+end
+
+-- generate palette
+function M.palGen(n_L, n_h, chroma)
+   local colors = {}
+   local incre_L = 1 / (n_L - 1)
+   local incre_h = 2 * math.pi / n_h
+   for i = 0, n_L - 1 do
+      for j = 0, n_h - 1 do
+	 local l = i * incre_L
+	 local h = j * incre_h
+	 local r_, g_, b_ = oklch2rgb(l, chroma, h)
+	 colors['pal_h_' .. (j + 1) .. '_L_' .. (i + 1)] = rgb2hex(r_, g_, b_)
+      end
+   end
+   return colors
 end
 
 -- generate n colors based on input hex with different lightness
@@ -93,7 +109,7 @@ function M.hexGen(hex, name, n, chroma)
    for i = 0, n - 1 do
       local l = i * incre_L
       local r_, g_, b_ = oklch2rgb(l, chroma, h)
-      colors[name .. i] = rgb2hex(r_, g_, b_)
+      colors[name .. (i + 1)] = rgb2hex(r_, g_, b_)
    end
    return colors
 end
