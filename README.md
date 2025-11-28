@@ -6,7 +6,7 @@ store some dark themes
   </tr>
   <tr>
     <td width="100%">
-      <img src="./dark.png" />
+      <img src="./dark.png" width="300" />
     </td>
   </tr>
 </table>
