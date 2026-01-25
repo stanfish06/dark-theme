@@ -2,8 +2,10 @@ local utils = require 'dark.utils'
 
 -- TODO: color gradients
 local colors = {
-  bg         = '#1E1E1E',
-  fg         = '#EBEBEB',
+  -- bg         = '#1E1E1E',
+  -- fg         = '#EBEBEB',
+  bg         = '#11262D', -- dark blue-green
+  fg         = '#D8D4CD',
   yellow     = '#FFF244',
   yellowgray = '#B1AC8C',
   darkgreen  = '#66BB6A',
@@ -12,6 +14,7 @@ local colors = {
   darkblue   = '#0000CC',
   cyan       = '#2AA198',
   cyandim    = '#00787A',
+  azure      = '#B3DAF9',
   blue       = '#9CCFD8',
   bluegray   = '#b8c0e0',
   purpleblue = '#889AFF',
