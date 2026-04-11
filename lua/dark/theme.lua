@@ -31,10 +31,10 @@ local syntax_highlight = {
    Type             = { fg = colors.blue       , bg = colors.bg          , bold = false, italic = false },
    LineNr           = { fg = colors.gray8      , bg = colors.bg          , bold = false, italic = false },
    CursorLineNr     = { fg = colors.yellow     , bg = colors.bg          , bold = false, italic = false },
-   StatusLine       = { fg = colors.fg         , bg = colors.pal_h_11_L_7, bold = true , italic = false },
-   StatusLineNC     = { fg = colors.gray1      , bg = colors.pal_h_7_L_9 , bold = false, italic = true  },
-   StatusLineTerm   = { fg = colors.fg         , bg = colors.pal_h_6_L_7 , bold = true , italic = false },
-   StatusLineTermNC = { fg = colors.fg         , bg = colors.pal_h_6_L_7 , bold = false, italic = true  },
+   StatusLine       = { fg = colors.fg         , bg = colors.pal_h_12_L_6, bold = true , italic = false },
+   StatusLineNC     = { fg = colors.gray1      , bg = colors.pal_h_12_L_6 , bold = false, italic = true  },
+   StatusLineTerm   = { fg = colors.fg         , bg = colors.pal_h_10_L_6 , bold = true , italic = false },
+   StatusLineTermNC = { fg = colors.fg         , bg = colors.pal_h_10_L_6 , bold = false, italic = true  },
 }
 
 function M.setup()

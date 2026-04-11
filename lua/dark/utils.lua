@@ -91,10 +91,10 @@ function M.palGen(n_L, n_h, chroma)
    local incre_h = 2 * math.pi / n_h
    for i = 0, n_L - 1 do
       for j = 0, n_h - 1 do
-	 local l = i * incre_L
-	 local h = j * incre_h
-	 local r_, g_, b_ = oklch2rgb(l, chroma, h)
-	 colors['pal_h_' .. (j + 1) .. '_L_' .. (i + 1)] = rgb2hex(r_, g_, b_)
+         local l = i * incre_L
+         local h = j * incre_h
+         local r_, g_, b_ = oklch2rgb(l, chroma, h)
+         colors['pal_h_' .. (j + 1) .. '_L_' .. (i + 1)] = rgb2hex(r_, g_, b_)
       end
    end
    return colors

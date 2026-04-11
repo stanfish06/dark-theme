@@ -33,7 +33,7 @@ for cname, hex in pairs(gray_colors) do
    colors[cname] = hex
 end
 
-local pal_colors = utils.palGen(10, 12, 0.4)
+local pal_colors = utils.palGen(20, 20, 0.4)
 for cname, hex in pairs(pal_colors) do
    colors[cname] = hex
 end
