@@ -21,20 +21,20 @@ function M.Hi(group, fg, bg, bold, italic)
 end
 
 local syntax_highlight = {
-   Normal           = { fg = colors.fg         , bg = colors.bg          , bold = false, italic = false },
-   Terminal         = { fg = colors.fg         , bg = colors.bg          , bold = false, italic = false },
-   Visual           = { fg = colors.fg         , bg = colors.gray7       , bold = false, italic = false },
-   Comment          = { fg = colors.gray8      , bg = colors.bg          , bold = true , italic = false },
-   String           = { fg = colors.green      , bg = colors.bg          , bold = false, italic = false },
-   Function         = { fg = colors.dimyellow  , bg = colors.bg          , bold = false, italic = false },
-   Keyword          = { fg = colors.yellow     , bg = colors.bg          , bold = false, italic = false },
-   Type             = { fg = colors.blue       , bg = colors.bg          , bold = false, italic = false },
-   LineNr           = { fg = colors.gray8      , bg = colors.bg          , bold = false, italic = false },
-   CursorLineNr     = { fg = colors.yellow     , bg = colors.bg          , bold = false, italic = false },
-   StatusLine       = { fg = colors.fg         , bg = colors.pal_h_12_L_6, bold = true , italic = false },
-   StatusLineNC     = { fg = colors.gray1      , bg = colors.pal_h_12_L_6 , bold = false, italic = true  },
-   StatusLineTerm   = { fg = colors.fg         , bg = colors.pal_h_10_L_6 , bold = true , italic = false },
-   StatusLineTermNC = { fg = colors.fg         , bg = colors.pal_h_10_L_6 , bold = false, italic = true  },
+   Normal           = { fg = colors.fg       , bg = colors.bg          , bold = false, italic = false },
+   Terminal         = { fg = colors.fg       , bg = colors.bg          , bold = false, italic = false },
+   Visual           = { fg = colors.fg       , bg = colors.gray7       , bold = false, italic = false },
+   Comment          = { fg = colors.gray8    , bg = colors.bg          , bold = true , italic = false },
+   String           = { fg = colors.green    , bg = colors.bg          , bold = false, italic = false },
+   Function         = { fg = colors.dimyellow, bg = colors.bg          , bold = false, italic = false },
+   Keyword          = { fg = colors.yellow   , bg = colors.bg          , bold = false, italic = false },
+   Type             = { fg = colors.blue     , bg = colors.bg          , bold = false, italic = false },
+   LineNr           = { fg = colors.gray8    , bg = colors.bg          , bold = false, italic = false },
+   CursorLineNr     = { fg = colors.yellow   , bg = colors.bg          , bold = false, italic = false },
+   StatusLine       = { fg = colors.fg       , bg = colors.pal_h_12_L_6, bold = true , italic = false },
+   StatusLineNC     = { fg = colors.gray1    , bg = colors.pal_h_12_L_6, bold = false, italic = true  },
+   StatusLineTerm   = { fg = colors.fg       , bg = colors.pal_h_10_L_6, bold = true , italic = false },
+   StatusLineTermNC = { fg = colors.fg       , bg = colors.pal_h_10_L_6, bold = false, italic = true  },
 }
 
 function M.setup()
