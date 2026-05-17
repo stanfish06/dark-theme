@@ -2,14 +2,14 @@ local utils = require 'dark.utils'
 
 -- TODO: color gradients
 local colors = {
-  -- bg         = '#1E1E1E',
-  -- fg         = '#EBEBEB',
-  -- bg          = '#11262D', -- dark blue-green
-  bg          = '#101520',
+  -- bg       = '#1E1E1E',
+  -- fg       = '#EBEBEB',
   fg          = '#D8D4CD',
+  bg          = '#101520',
   yellow      = '#FFF244',
   yellowgray  = '#B1AC8C',
   dimyellow   = '#D9D8AA',
+  darkgreenp  = '#11262D',
   darkgreen   = '#66BB6A',
   green       = '#66EB66',
   greengray   = '#A4B5A7',
