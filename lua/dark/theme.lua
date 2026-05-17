@@ -35,8 +35,8 @@ local syntax_highlight = {
    StatusLineNC     = { fg = colors.gray1    , bg = colors.pal_h_12_L_6, bold = false, italic = true  },
    StatusLineTerm   = { fg = colors.fg       , bg = colors.pal_h_10_L_6, bold = true , italic = false },
    StatusLineTermNC = { fg = colors.fg       , bg = colors.pal_h_10_L_6, bold = false, italic = true  },
-   TabLine          = { fg = colors.fg       , bg = colors.bg          , bold = true , italic = false },
-   TabLineSel       = { fg = colors.gray9    , bg = colors.gray6       , bold = false, italic = false },
+   TabLineSel       = { fg = colors.fg       , bg = colors.bg          , bold = true , italic = false },
+   TabLine          = { fg = colors.gray9    , bg = colors.gray6       , bold = false, italic = false },
    TabLineFill      = { fg = colors.fg       , bg = colors.gray6       , bold = false, italic = false },
 }
 
