@@ -26,6 +26,7 @@ local syntax_highlight = {
    Visual           = { fg = colors.fg       , bg = colors.gray7       , bold = false, italic = false },
    Comment          = { fg = colors.gray8    , bg = colors.bg          , bold = true , italic = false },
    String           = { fg = colors.green    , bg = colors.bg          , bold = false, italic = false },
+   Number           = { fg = colors.orange   , bg = colors.bg          , bold = false, italic = false },
    Function         = { fg = colors.dimyellow, bg = colors.bg          , bold = false, italic = false },
    Keyword          = { fg = colors.yellow   , bg = colors.bg          , bold = false, italic = false },
    Type             = { fg = colors.blue     , bg = colors.bg          , bold = false, italic = false },
