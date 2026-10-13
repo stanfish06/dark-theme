@@ -27,7 +27,7 @@ function oklch2rgb(L, C, h)
    return r, g, b
 end
 
-function rgb2oklch(r, g, b) 
+function rgb2oklch(r, g, b)
    local l = 0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b
    local m = 0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b
    local s = 0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b
