@@ -1,3 +1,5 @@
+(require 'dark-colors)
+
 (defun dark-faces-syntax ()
   "Face specs for font-lock faces."
   (dark-with-colors

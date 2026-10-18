@@ -1,3 +1,5 @@
+(require 'dark-colors)
+
 (defun dark-faces-diff ()
   "Face specs for diff and compilation faces."
   (dark-with-colors

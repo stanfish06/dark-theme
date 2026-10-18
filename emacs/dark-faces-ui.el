@@ -1,3 +1,5 @@
+(require 'dark-colors)
+
 (defun dark-faces-ui ()
   "Face specs for UI, search, completion and whitespace faces."
   (dark-with-colors

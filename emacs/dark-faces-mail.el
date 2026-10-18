@@ -1,3 +1,5 @@
+(require 'dark-colors)
+
 (defun dark-faces-mail ()
   "Face specs for mu4e, gnus and shr faces."
   (dark-with-colors

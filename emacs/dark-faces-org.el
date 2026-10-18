@@ -1,3 +1,5 @@
+(require 'dark-colors)
+
 (defun dark-faces-org ()
   "Face specs for org and markdown faces."
   (dark-with-colors
