@@ -9,7 +9,7 @@
         (:family
          "Iosevka"
          :width normal
-         :height 140
+         :height 90
          :weight normal
          :slant normal
          :foreground ,fg
